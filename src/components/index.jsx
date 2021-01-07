@@ -34,7 +34,7 @@ const Index = (props) => {
                 history.push("/agent/login")
             })
         }
-    },[]);
+    },[history,owner]);
     return (
         <>
             <Header title={title} />

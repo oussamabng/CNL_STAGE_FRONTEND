@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Image,Icon, Button } from "semantic-ui-react";
 import {Link, useHistory} from "react-router-dom";
 
@@ -20,7 +20,6 @@ import { connect } from "react-redux";
 
 const Sidebar = (props) => {
     const { owner, active,isOpen,username } = props;
-    const [file,setFile] = useState(null);
     const history = useHistory();
     const handleAddProject = ()=>{
         return history.push("/admin/add/project")

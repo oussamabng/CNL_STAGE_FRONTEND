@@ -1,6 +1,5 @@
-import React,{useEffect,useState} from 'react';
+import React from 'react';
 import { Grid,Container,Image } from "semantic-ui-react";
-import {useHistory} from "react-router-dom";
 
 //? import css
 import "./Login.css";
@@ -9,7 +8,6 @@ import FormLogin from "../../components/FormLogin/FormLogin";
 
 //? redux 
 import { connect } from "react-redux";
-import propTypes from "prop-types";
 
 const Deco = ()=>{
     return (

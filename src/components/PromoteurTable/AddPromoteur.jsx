@@ -1,10 +1,8 @@
-import React,{useState,useEffect} from 'react';
-import { useHistory } from 'react-router-dom';
+import React,{useState} from 'react';
 import { Dropdown, Form, Message } from "semantic-ui-react";
 import API from '../../API/API.js';
 
 const AddPromoteur = ()=>{
-    const history = useHistory();
     const [first_name,setFirstName] = useState("");
     const [last_name,setLastName] = useState("");
     const [phone1,setPhone1] = useState("");

@@ -32,13 +32,13 @@ const ProjectTable = (props)=>{
     const [data,setData] = useState([]);
     const [searchField,setSearchField] = useState("");
     const [page,setPage] = useState(0);
-    const [limit,setLimit] = useState(6);
     const [totalPages,setTotalPages] = useState(null);
     const [isNext,setIsNext] = useState(null);
     const [isPrev,setIsPrev] = useState(null);
     const [activeItem,setActiveItem] = useState("in progress");
     const [searchBtn,setSearchBtn] = useState(false);
     const [loadingBtn,setLoadingBtn] = useState(false);
+    const limit = 6;
 
     useEffect(()=>{
         setLoading(true);
@@ -67,7 +67,7 @@ const ProjectTable = (props)=>{
             setSearchBtn(false);
             return history.push('/error')
         })
-    },[page,searchBtn])
+    },[page,searchBtn,history])
     const handlePagination = (isRight)=>{
           if (isRight){
             setPage(isNext);
@@ -95,10 +95,14 @@ const ProjectTable = (props)=>{
                 loaded ?(
                     <div className="projet_sip">
                 <div className="header">
-                    <p name="in progress" className={activeItem === "in progress" ? "active":""} onClick={()=>{}} >En Cours
+                    <p name="in progress" className={activeItem === "in progress" ? "active":""} onClick={()=>{
+                        setActiveItem("in progress")
+                    }} >En Cours
                         {activeItem === "in progress" && <div className="active_line"></div>}
                         </p>
-                    <p name="finished" className={activeItem === "finished" ? "active":""} onClick={()=>{}} >Terminés
+                    <p name="finished" className={activeItem === "finished" ? "active":""} onClick={()=>{
+                        setActiveItem("finished")
+                    }} >Terminés
                     {activeItem === "finished" && <div className="active_line"></div>}
                     </p>
                 </div>

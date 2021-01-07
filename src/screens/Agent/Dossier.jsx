@@ -17,7 +17,7 @@ export default function Dossier(props) {
         .catch(err=>{
             history.push("/error")
         })
-    }, []);
+    }, [history]);
     return (    
         <>
         <Index title="Les dossiers" owner={1}  active="dossiers" >
