@@ -1,0 +1,1 @@
+export const GET_DOSSIER_LIST = "/api/dossier";

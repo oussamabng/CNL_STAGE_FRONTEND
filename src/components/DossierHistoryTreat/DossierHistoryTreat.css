@@ -1,0 +1,48 @@
+.historyDossier{
+    padding: 2rem;
+    margin: 2rem 4rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 75vh;
+}
+
+.menuDossier .menu{
+    width: max-content;
+    margin: 2rem;
+
+}
+.menuDossier .ui.secondary.pointing.menu .active.item{
+    color: var(--orange);
+    border-color: var(--orange);
+}
+.menuDossier .ui.secondary.pointing.menu .item{
+
+}
+.menuDossier .menu .item{
+    font-size: 16px;
+    padding: 1rem 2rem!important;
+}
+.historyDossier .card_info .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem .5rem;
+}
+.historyDossier .card_info .item p{
+    margin: 0;
+    font-family: "Anodina" !important;
+    color: black;
+    font-size: 14px!important;
+}
+.historyDossier .card_info .item p:first-child{
+    font-family: "Anodina-Bold" !important;
+    font-weight: 900;
+}
+.date_treat{
+    color: var(--blue)!important;
+}
+.debut_fin{
+    color: #db2828!important;
+}

@@ -1,0 +1,12 @@
+.dossier_info{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.dossier_info .item_join{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}

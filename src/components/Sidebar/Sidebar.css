@@ -1,0 +1,217 @@
+.sidebar_sip{
+    background: white;
+    width: 260px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 999;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.sidebar_sip > .row{
+    padding: 3rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar_sip > .row > .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar_sip > .row > .header > .ui.image{
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+}
+.sidebar_sip > .row > .header > h2{
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    margin-top: .75rem;
+    font-family:"Anodina";
+}
+.sidebar_sip > .row > .header > a{
+    color: #575757;
+    font-size: 12px;
+    margin: 0;
+    margin-top: .25rem;
+    font-family:"Anodina-Light";
+}
+.sidebar_sip > .row > .items{
+    padding: 3rem 0;
+}
+.sidebar_sip > .row > .items ul{
+    padding: 0;
+    margin: 0;
+}
+.sidebar_sip > .row > .items ul >li{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    cursor: pointer;
+}
+.sidebar_sip > .row > .items ul  > li > svg{
+    margin-right: 1.25rem;
+}
+.sidebar_sip > .row > .items ul  > li:hover a{
+    color: var(--blue);
+    transition: all 0.1s ease-out;
+}
+.sidebar_sip > .row > .items ul >li a{
+    color:#A6A6A6;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    transition: all 0.1s ease-out;
+    font-family: "Anodina-Bold"!important;
+}
+.sidebar_sip > .row > .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar_sip > .row > .items ul >li.active a{
+    color: var(--blue);
+}
+.sidebar_sip > .row > .actions > .ui.button{ 
+    width: 190px;
+    font-size: 14px;
+    margin-bottom: 1.4rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: "Anodina";
+}
+.sidebar_sip > .row > .actions .primary{
+    background: var(--blue);
+    color: white;
+    font-family:"Anodina";
+
+}
+.sidebar_sip > .row > .actions  .inverted{
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    background: white;
+    font-family:"Anodina";
+
+}
+.sidebar_sip > .row > .actions .primary .icon{
+    background:var(--blue)!important;
+    color: white!important;
+    
+}
+.sidebar_sip > .row > .actions .inverted .icon{
+    background:white;
+    color: var(--blue)!important;
+}
+
+.sidebar_sip > .row > .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+.sidebar_sip > .row > .logo h4{
+    font-size: 14px;
+    font-family: "Anodina";
+}
+.sidebar_sip > .row > .logo a{
+    font-size: 14px;
+    text-decoration: underline;
+    color: #A6A6A6;
+    font-family: "Anodina";
+}
+.active-elm {
+    position: absolute;
+    right: 0;
+    height: 20px;
+    width: 4px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: var(--blue);
+}
+.sidebar_sip > .row > .items ul >li svg{
+    width: 18px;
+    height: 18px;
+    fill: #A6A6A6;
+    transition: all 0.1s ease-out;
+}
+.sidebar_sip > .row > .items ul >li:hover svg,.sidebar_sip > .row > .items ul >li.active svg{
+    fill:var(--blue);
+    transition: all 0.1s ease-out;
+}
+.sidebar_sip > .row > .actions .button{
+    box-shadow: none!important;
+}
+.sidebar_sip > .row > .actions .primary:hover{
+    background: #0a3d72;
+}
+.sidebar_sip > .row > .actions .primary:hover .icon{
+    background: #0a3d72!important;
+}
+.sidebar_sip > .row > .actions .inverted:hover{
+    background: #0E4D90;
+    color: white;
+}
+.sidebar_sip > .row > .actions .inverted:hover .icon{
+    color: white!important;
+}
+@media(max-width:999px){
+    .step_bar{
+        display: none;
+    }
+    .sidebar_sip{
+        left: -260px;
+        transition: all ease-in .3s;
+    }
+    .sidebar_sip.opened{
+        left: 0;
+        transition: all ease-in .3s;
+    }
+    .sidebar_sip > .row > .header{
+        display: none;
+    }
+    .sidebar_sip > .row > .items ul > li a{
+        font-size: 12px;
+    }
+    .active-elm{
+        display: none;
+    }
+    .sidebar_sip{
+        padding-top: 120px;
+    }
+    .sidebar_sip > .row{
+        padding-top: 0;
+        padding-bottom: .5rem;
+    }
+    .sidebar_sip > .row > .actions > .ui.button{
+        font-size: 12px;
+        width: 170px;
+    }
+    
+    .sidebar_sip > .row > .items,.sidebar_sip > .row > .logo{
+        padding: 1rem 0;
+    }
+    
+}
+@media(max-width:599px){
+    .sidebar_sip > .row > .logo h4,.sidebar_sip > .row > .logo a{
+        display: none;
+    }
+}
+.sidebar_sip > .row > .actions > .ui.button.inverted:hover .icon{
+    background:var(--blue);
+    color: white;
+}
+.sidebar_sip > .row > .actions > .ui.button.inverted .icon{
+    background: white;
+    color: var(--blue);
+}

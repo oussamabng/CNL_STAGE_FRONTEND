@@ -1,0 +1,65 @@
+.error_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.error_container .error_circle{
+    background: white;
+    border-radius: 50%;
+    width: 618px;
+    height: 618px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: black;
+}
+.error_container .error_circle p{
+    margin-top: 3rem!important;
+    margin: 0;
+}
+.error_container .error_circle h2{
+    margin: 0;
+    font-size: 25px;
+}
+.error_container .error_circle .ui.button{
+    background: var(--blue);
+    color: white;
+    margin: 3rem 0;
+    height: 40px;
+    font-size: 14px;
+    font-family: "Anodina";
+}
+@media(max-width:799px){
+    .error_container .error_circle .ui.image{
+        width:250px;
+    }
+    .error_container .error_circle{
+        font-size: 18px;
+    }
+    .error_container .error_circle h2{
+        font-size: 18px;
+    }
+    .error_container .error_circle .ui.button{
+        font-size: 12px;
+    }
+    .error_container .error_circle{
+        width: 500px;
+        height: 500px;
+    }
+}
+@media(max-width:499px){
+    .error_container .error_circle{
+        width: 340px;
+        height: 340px;
+    }
+    .error_container .error_circle .ui.image{
+        width:150px;
+        margin-top: 2rem;
+    }
+}

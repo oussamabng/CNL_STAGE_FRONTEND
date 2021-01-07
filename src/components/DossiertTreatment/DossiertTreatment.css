@@ -1,0 +1,111 @@
+.projet_sip .row.treat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.projet_sip .row.treat .dropdown{
+    margin: 2rem;
+}
+.projet_sip .row.treat .form_treat{
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.radio_input{
+    display: flex;
+    align-items: center;
+    margin: .5rem 2rem !important;
+}
+.radio_input .ui.radio.checkbox label::before{
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+.radio_input .ui.radio.checkbox label{
+    font-size: 14px;
+    padding-top: .1rem;
+    padding-left: 2rem;
+}
+.projet_sip .row.treat .actions{
+    margin: .5rem 2rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projet_sip .row.treat .actions .button{
+    color: white;
+    background: var(--blue);
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+}
+.dropdown_date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.dropdown_date .date_treat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dropdown_date .date_treat .button{
+    min-width: 100px;
+    min-height: 40px;
+    background: #db2828;
+    color: white;
+}
+.dropdown_date .date_treat #debut{
+    background: #16ab39;
+}
+
+.ui.segment.modal-date{
+    position: fixed;
+    z-index: 110;
+    right: 1%;
+    top: 0%;
+    background: white!important;
+    padding: 1rem 2rem!important;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15)!important;
+}
+.ui.segment.modal-date h1{
+    font-size: 16px;
+    font-weight: 900!important;
+    color: #16ab39;
+}
+.ui.segment.modal-date p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.ui.radio.checkbox label::after{
+    width: 22px;
+    height: 22px;
+    background: var(--orange)!important;
+}
+.form_treat  .radio_input.active label{
+    color: var(--orange)!important;
+}
+
+.other_input{
+    min-width: 280px !important;
+    font-size: 14px !important;
+}
+.dinard{
+    position: absolute;
+    right: 4%;
+    top: 20%;
+    font-weight: 900;
+    color: black;
+    font-family: "Anodina-Bold";
+}
+.ui.form .disabled.field,.ui.form .field.disabled > label,.ui.disabled.input,.ui.checkbox input[disabled] ~ label{
+    opacity: 1;
+}
+.dropdown_input_treat{
+    margin: 0!important;
+}

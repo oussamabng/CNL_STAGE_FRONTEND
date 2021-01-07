@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Anodina';
+  src: local('Anodina'), url("./assets//fonts/Anodina-Regular.otf") format('otf');
+}
+@font-face {
+  font-family: 'AnodinaExtraLight';
+  src: local('AnodinaExtraLight'), url("./assets/fonts/Anodina-ExtraLight.otf") format('otf');
+}
+@font-face {
+  font-family: 'Anodina-Bold';
+  src: local('Anodina-Bold'), url("./assets//fonts/Anodina-Bold.otf") format('otf');
+}
+@font-face {
+  font-family: 'Anodina-Light';
+  src: local('Anodina-Light'), url("./assets//fonts/Anodina-Light.otf") format('otf');
+}
+@font-face {
+  font-family: 'Anodina-Extra-Bold';
+  src: local('Anodina-Extra-Bold'), url("./assets//fonts/Anodina-ExtraBold.otf") format('otf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --blue:#0E4D90;
+  --blue_light:#9CC4E5;
+  --white:#F3F8F3;
+  --orange:#ED984A;
+}
+body {
+  margin: 0;
+  font-family:"Anodina";
+  background: #F6F9FF;
+}
+a:hover,
+a:active,
+a:focus,
+input:hover,
+input:active,
+input:focus,
+button:hover,
+button:active,
+button:focus {
+  outline: 0;
+}
+a {
+  text-decoration: none;
+  font-family: 'Anodina';
+}
+p,h1,h2,h3,h4,label,span,button{
+  font-family: 'Anodina';
+}
+ul {
+  list-style: none;
+}
+.h-full {
+  height: 100%;
+}
+.w-full{
+  width:100%
+}
+.m-0 {
+  margin: 0;
+}
+.p-0 {
+  padding: 0;
+}
+._margin_horizontal_lg {
+  margin: auto 3rem !important;
+}
+._margin_horizontal_md {
+  margin: auto 2rem !important;
+}
+._margin_horizontal_sm {
+  margin: auto 1rem !important;
+}
+._margin_horizontal_xs {
+  margin: auto 0.5rem !important;
+}
+._margin_vertical_lg {
+  margin: 3rem auto !important;
+}
+._margin_vertical_md {
+  margin: 2rem auto !important;
+}
+._margin_vertical_sm {
+  margin: 1rem auto !important;
+}
+._margin_vertical_xs {
+  margin: 0.05rem auto !important;
+}
+._padding_horizontal_lg {
+  padding: auto 3rem !important;
+}
+._padding_horizontal_md {
+  padding: auto 2rem !important;
+}
+._padding_horizontal_sm {
+  padding: auto 1rem !important;
+}
+._padding_horizontal_xs {
+  padding: auto 0.5rem !important;
+}
+._padding_vertical_lg {
+  padding: 3rem auto !important;
+}
+._padding_vertical_md {
+  padding: 2rem auto !important;
+} 
+._padding_vertical_sm {
+  padding: 1rem auto !important;
+}
+._padding_vertical_xs {
+  padding: 0.05rem auto !important;
+}
+.main_{
+  padding-left: 260px;
+}
+@media(max-width:999px){
+  .main_{
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+}
+.ui.star.rating .active.icon{
+  text-shadow: none!important;
 }

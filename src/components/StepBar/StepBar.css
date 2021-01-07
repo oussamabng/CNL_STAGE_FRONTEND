@@ -1,0 +1,67 @@
+.step {
+    display: flex;
+    align-items: center;
+    margin-left: .75rem;
+}
+.step_bar{
+    padding: 0rem 4rem;
+}
+.icon_step{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.icon_step.active .line{
+    background: var(--orange);
+}
+.line{
+    height: 3px;
+    width: 50px;
+    background: #707070;
+}
+.icon_step.active .circle{
+    border: 1px solid var(--orange);
+    box-shadow: 0 0px 6px 0 #ED984A;
+
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #707070;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_step.active .under_circle{
+    background: var(--orange);
+}
+.under_circle{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #707070;
+}
+.text p{
+    margin: 0;
+    font-size: 16px;
+    font-family: "Anodina";
+    color: #A6A6A6;
+}
+.text{
+    margin-left: .75rem;
+    margin-bottom: .15rem;
+}
+.text.active p{
+    color: var(--blue);
+}
+.line_text{
+    width: 15px;
+    height: 1px;
+    background: var(--blue);
+}
+.step_bar .steps{
+    display: flex;
+    align-items: center;
+}

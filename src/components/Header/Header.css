@@ -1,0 +1,102 @@
+.header_sip {
+    width: 100%;
+    padding: 2rem 4rem;
+    padding-right: 0;
+}
+.header_sip > .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_sip .row > h1{
+    font-size: 25px;
+    margin: 0;
+    color:black;
+    padding-left: 260px;
+    font-family: 'Poppins', sans-serif;
+}
+.right_part{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right_part .ui.button{
+    margin: 0 .5rem;
+    transform: translate(2%);
+    padding: 1.4rem 1rem;
+    background: white;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: none;
+    color: #B2B2B2;
+    transition: background 0.1s ease-out;
+    font-family:"Anodina";
+}
+.right_part .ui.button > .ui.icon,.ui.labeled.icon.button > .icon {
+    background: white ;
+    fill: #B2B2B2;
+    transition: background 0.1s ease-out;
+    color: #B2B2B2;
+}
+.right_part .ui.button.active{
+    background: var(--blue);
+    color:white;
+    transition: background 0.1s ease-out;
+}
+.right_part .ui.button:hover{
+    background: var(--blue);
+    color:white;
+    transition: background 0.1s ease-out;
+}
+.right_part .ui.button:hover .ui.icon{
+    fill: var(--blue);
+    color: var(--blue);
+    transition: background 0.1s ease-out;
+}
+ .right_part .ui.labeled.icon.button:hover > .icon{
+    background: var(--blue);
+    color: white;
+    transition: background 0.1s ease-out;
+}
+.search_box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.search_box .input input{
+    border: 0;
+    padding: 1.4rem 1rem;
+    transform: translate(2%);
+    font-size: 14px;
+}
+.search_box .input input::placeholder{
+    color: var(--blue);
+}
+.search_box .input input:focus::placeholder{
+    color: var(--blue);
+}
+.search_box .input{
+    width: 0%;
+    transition: width .2s ease-in!important;
+}
+.search_box .input input{
+    background: transparent!important;
+    transition: background .2s ease-in!important;
+}
+.search_box .input.open input{
+    background: white!important;
+    transition: background .2s ease-in!important;
+}
+.search_box .input.open{
+    width: 100%;    
+    transition: width .2s ease-in!important;
+}
+.search-input{
+    border-top-right-radius: 5px!important;
+    border-bottom-right-radius: 5px!important;
+}
+@media(max-width:999px){
+    .header_sip{
+        display: none;
+    }
+}

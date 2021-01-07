@@ -1,0 +1,38 @@
+.form_add_project .input,.ui.form .field > .selection.dropdown{
+    min-width: 280px!important;
+    font-size: 14px!important;
+}
+.form_add_project .input,.ui.form .field input{
+    box-shadow: none!important;
+}
+.form_add_project .field{
+    margin: .5rem 2rem !important;
+}
+.form_add_project .field label{
+    font-size: 14px!important;
+    font-family: "Anodina-Bold"!important;
+    color: black!important;
+}
+.form_add_project .button,.form_add_project .button:active,.form_add_project .button:focus{
+    background: var(--blue);
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 14px;
+}
+.form_add_project .button:hover{
+    background: #0c4077;
+    color: white;
+}
+.projet_sip.add_project .header_table .row{
+    justify-content: center;
+    padding: 2rem;
+}
+.form_add_project .actions{
+    display: flex;
+    justify-content: center;
+    padding: 1rem!important;
+    margin: 2rem!important;
+}
+.message_project{
+    min-height: 50px;
+}
